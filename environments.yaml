@@ -1,12 +1,4 @@
-wasl:
-         - name: "wasl"
-         - env-url: "https://itg02330.live.dynatrace.com"
-         - env-token-name: "WASL_API_TOKEN"
-mule:
-         - name: "mule"
-         - env-url: "https://mop45905.live.dynatrace.com"
-         - env-token-name: "MULE_TOKEN"
-tbrandl:
-         - name: "tbrandl"
-         - env-url: "https://ref47486.sprint.dynatracelabs.com"
-         - env-token-name: "TBRANDL_TOKEN"
+sap:
+         - name: "sap"
+         - env-url: "https://xxxxxx.live.dynatrace.com"
+         - env-token-name: "SAP_TOKEN"
