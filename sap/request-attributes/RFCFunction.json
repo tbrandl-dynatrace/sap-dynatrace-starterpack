@@ -1,0 +1,140 @@
+{
+ "aggregation": "FIRST",
+ "confidential": false,
+ "dataSources": [
+  {
+   "enabled": true,
+   "methods": [
+    {
+     "argumentIndex": 2,
+     "capture": "ARGUMENT",
+     "method": {
+      "argumentTypes": [
+       "com.sap.conn.jco.rt.ClientConnection",
+       "java.lang.String",
+       "com.sap.conn.jco.rt.DefaultParameterList",
+       "com.sap.conn.jco.rt.DefaultParameterList",
+       "com.sap.conn.jco.rt.DefaultParameterList",
+       "com.sap.conn.jco.rt.DefaultParameterList",
+       "boolean",
+       "com.sap.conn.jco.AbapClassException$Mode"
+      ],
+      "className": "com.sap.conn.jco.rt.JCoMiddleware$Client",
+      "methodName": "execute",
+      "modifiers": [
+       "ABSTRACT"
+      ],
+      "returnType": "void",
+      "visibility": "PUBLIC"
+     }
+    }
+   ],
+   "source": "METHOD_PARAM",
+   "technology": "JAVA",
+   "valueProcessing": {
+    "splitAt": "",
+    "trim": false
+   }
+  },
+  {
+   "enabled": true,
+   "methods": [
+    {
+     "argumentIndex": 2,
+     "capture": "ARGUMENT",
+	 "deepObjectAccess": ".getName()",
+     "method": {
+      "argumentTypes": [
+       "com.sap.conn.jco.server.JCoServerContext",
+	   "com.sap.conn.jco.JCoRequest",
+	   "com.sap.conn.jco.JCoResponse"
+      ],
+      "className": "com.sap.conn.jco.server.JCoServerRequestHandler",
+      "methodName": "handleRequest",
+      "modifiers": [
+       "ABSTRACT"
+      ],
+      "returnType": "void",
+      "visibility": "PUBLIC"
+     }
+    }
+   ],
+   "source": "METHOD_PARAM",
+   "technology": "JAVA",
+   "valueProcessing": {
+    "splitAt": "",
+    "trim": false
+   }
+  },
+  {
+   "enabled": true,
+   "methods": [
+    {
+     "argumentIndex": 2,
+     "capture": "ARGUMENT",
+	 "deepObjectAccess": ".getName()",
+     "method": {
+      "argumentTypes": [
+       "com.sap.conn.jco.server.JCoServerContext",
+	   "com.sap.conn.jco.JCoFunction"
+      ],
+      "className": "com.sap.conn.jco.server.JCoServerFunctionHandler",
+      "methodName": "handleRequest",
+      "modifiers": [
+       "ABSTRACT"
+      ],
+      "returnType": "void",
+      "visibility": "PUBLIC"
+     }
+    }
+   ],
+   "source": "METHOD_PARAM",
+   "technology": "JAVA",
+   "valueProcessing": {
+    "splitAt": "",
+    "trim": false
+   }
+  },
+  {
+   "enabled": true,
+   "methods": [
+    {
+     "capture": "THIS",
+     "deepObjectAccess": ".ToString()",
+     "method": {
+      "argumentTypes": [
+       "SAP.Middleware.Connector.RfcDestination"
+      ],
+      "className": "SAP.Middleware.Connector.RfcFunction",
+      "methodName": "Invoke",
+      "modifiers": [],
+      "returnType": "System.Void",
+      "visibility": "PUBLIC"
+     }
+    }
+   ],
+   "source": "METHOD_PARAM",
+   "technology": "DOTNET",
+   "valueProcessing": {
+    "extractSubstring": {
+     "delimiter": "FUNCTION",
+     "endDelimiter": "(",
+     "position": "BETWEEN"
+    },
+    "splitAt": "",
+    "trim": true
+   }
+  }
+ ],
+ "dataType": "STRING",
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.227.67.20210921-085030",
+  "configurationVersions": [
+   3
+  ]
+ },
+ "name": "{{.name}}",
+ "normalization": "ORIGINAL",
+ "skipPersonalDataMasking": true
+}

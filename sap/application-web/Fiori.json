@@ -1,0 +1,250 @@
+{
+ "conversionGoals": [],
+ "costControlUserSessionPercentage": 100,
+ "customActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "loadActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "loadActionKeyPerformanceMetric": "VISUALLY_COMPLETE",
+ "metaDataCaptureSettings": [
+  {
+   "capturingName": ".sapUshellHeadTitle",
+   "name": "SAPPageTitle",
+   "publicMetadata": false,
+   "type": "CSS_SELECTOR",
+   "uniqueId": 1,
+   "useLastValue": false
+  },
+  {
+   "capturingName": ".sapUshellAnchorItemSelected",
+   "name": "SAPTab",
+   "publicMetadata": false,
+   "type": "CSS_SELECTOR",
+   "uniqueId": 2,
+   "useLastValue": false
+  },
+  {
+   "capturingName": "#meAreaHeaderButton@title",
+   "name": "VisitTag4",
+   "publicMetadata": false,
+   "type": "CSS_SELECTOR",
+   "uniqueId": 3,
+   "useLastValue": false
+  }
+ ],
+ "metadata": {
+  "clusterVersion": "1.227.73.20210922-152101",
+  "configurationVersions": [
+   27
+  ]
+ },
+ "monitoringSettings": {
+  "addCrossOriginAnonymousAttribute": true,
+  "advancedJavaScriptTagSettings": {
+   "additionalEventHandlers": {
+    "blurEventHandler": false,
+    "changeEventHandler": false,
+    "clickEventHandler": false,
+    "maxDomNodesToInstrument": 5000,
+    "mouseupEventHandler": false,
+    "toStringMethod": false,
+    "userMouseupEventForClicks": false
+   },
+   "eventWrapperSettings": {
+    "blur": false,
+    "change": false,
+    "click": false,
+    "mouseUp": false,
+    "touchEnd": false,
+    "touchStart": false
+   },
+   "globalEventCaptureSettings": {
+    "additionalEventCapturedAsUserInput": "",
+    "click": true,
+    "doubleClick": true,
+    "keyDown": true,
+    "keyUp": true,
+    "mouseDown": true,
+    "mouseUp": true,
+    "scroll": false
+   },
+   "instrumentUnsupportedAjaxFrameworks": false,
+   "maxActionNameLength": 100,
+   "maxErrorsToCapture": 10,
+   "specialCharactersToEscape": "",
+   "syncBeaconFirefox": false,
+   "syncBeaconInternetExplorer": false
+  },
+  "cacheControlHeaderOptimizations": true,
+  "contentCapture": {
+   "javaScriptErrors": true,
+   "resourceTimingSettings": {
+    "nonW3cResourceTimings": false,
+    "nonW3cResourceTimingsInstrumentationDelay": 50,
+    "resourceTimingCaptureType": "CAPTURE_FULL_DETAILS",
+    "resourceTimingsDomainLimit": 10,
+    "w3cResourceTimings": true
+   },
+   "timeoutSettings": {
+    "temporaryActionLimit": 0,
+    "temporaryActionTotalTimeout": 100,
+    "timedActionSupport": false
+   },
+   "visuallyComplete2Settings": {
+    "excludeUrlRegex": "",
+    "ignoredMutationsList": "",
+    "inactivityTimeout": 1000,
+    "mutationTimeout": 50,
+    "threshold": 50
+   },
+   "visuallyCompleteAndSpeedIndex": true
+  },
+  "cookiePlacementDomain": "",
+  "correlationHeaderInclusionRegex": "",
+  "customConfigurationProperties": "uana=data-sap-ui|exp=1|peti=1",
+  "excludeXhrRegex": "",
+  "fetchRequests": true,
+  "injectionMode": "JAVASCRIPT_TAG",
+  "javaScriptFrameworkSupport": {
+   "activeXObject": false,
+   "angular": false,
+   "dojo": false,
+   "extJS": false,
+   "icefaces": false,
+   "jQuery": true,
+   "mooTools": false,
+   "prototype": false
+  },
+  "scriptTagCacheDurationInHours": 1,
+  "secureCookieAttribute": false,
+  "serverRequestPathId": "",
+  "xmlHttpRequest": true
+ },
+ "name": "{{.name}}",
+ "realUserMonitoringEnabled": true,
+ "sessionReplayConfig": {
+  "costControlPercentage": 100,
+  "cssResourceCapturingExclusionRules": [],
+  "enableCssResourceCapturing": true,
+  "enabled": true
+ },
+ "type": "MANUALLY_INJECTED",
+ "urlInjectionPattern": "",
+ "userActionAndSessionProperties": [],
+ "userActionNamingSettings": {
+  "customActionNamingRules": [],
+  "ignoreCase": false,
+  "loadActionNamingRules": [],
+  "placeholders": [
+   {
+    "input": "METADATA",
+    "metadataId": 1,
+    "name": "SAPPageTitle",
+    "processingPart": "ALL",
+    "processingSteps": [],
+    "useGuessedElementIdentifier": false
+   },
+   {
+    "input": "METADATA",
+    "metadataId": 2,
+    "name": "SAPTab",
+    "processingPart": "ALL",
+    "processingSteps": [],
+    "useGuessedElementIdentifier": false
+   },
+   {
+    "input": "XHR_URL",
+    "metadataId": null,
+    "name": "OData",
+    "processingPart": "ALL",
+    "processingSteps": [
+     {
+      "fallbackToInput": false,
+      "patternAfter": null,
+      "patternAfterSearchType": "LAST",
+      "patternBefore": null,
+      "patternBeforeSearchType": "FIRST",
+      "patternToReplace": null,
+      "regularExpression": "/odata/([^\\$\\?]*+)",
+      "replacement": null,
+      "type": "EXTRACT_BY_REGULAR_EXPRESSION"
+     }
+    ],
+    "useGuessedElementIdentifier": false
+   },
+   {
+    "input": "ELEMENT_IDENTIFIER",
+    "metadataId": null,
+    "name": "redactedElementIdentifier",
+    "processingPart": "ALL",
+    "processingSteps": [
+     {
+      "fallbackToInput": false,
+      "patternAfter": null,
+      "patternAfterSearchType": "LAST",
+      "patternBefore": null,
+      "patternBeforeSearchType": "FIRST",
+      "patternToReplace": null,
+      "regularExpression": "\\d+",
+      "replacement": "#",
+      "type": "REPLACE_WITH_REGULAR_EXPRESSION"
+     }
+    ],
+    "useGuessedElementIdentifier": false
+   }
+  ],
+  "queryParameterCleanups": [
+   "cfid",
+   "phpsessid",
+   "__sid",
+   "cftoken",
+   "sid"
+  ],
+  "splitUserActionsByDomain": true,
+  "useFirstDetectedLoadAction": true,
+  "xhrActionNamingRules": [
+   {
+    "conditions": [],
+    "template": "{SAPPageTitle} - {SAPTab} - {userInteraction (default)} on {redactedElementIdentifier}",
+    "useOrConditions": false
+   },
+   {
+    "conditions": [],
+    "template": "{SAPPageTitle} - {userInteraction (default)} on {redactedElementIdentifier}",
+    "useOrConditions": false
+   }
+  ]
+ },
+ "userTags": [
+  {
+   "cleanupRule": "Profile of (.*+)",
+   "ignoreCase": false,
+   "metadataId": 3,
+   "uniqueId": 4
+  }
+ ],
+ "waterfallSettings": {
+  "resourceBrowserCachingThreshold": 50,
+  "resourcesThreshold": 100000,
+  "slowCdnResourcesThreshold": 200000,
+  "slowFirstPartyResourcesThreshold": 200000,
+  "slowThirdPartyResourcesThreshold": 200000,
+  "speedIndexVisuallyCompleteRatioThreshold": 50,
+  "uncompressedResourcesThreshold": 860
+ },
+ "xhrActionApdexSettings": {
+  "frustratingFallbackThreshold": 12000,
+  "frustratingThreshold": 12000,
+  "toleratedFallbackThreshold": 3000,
+  "toleratedThreshold": 3000
+ },
+ "xhrActionKeyPerformanceMetric": "VISUALLY_COMPLETE"
+}

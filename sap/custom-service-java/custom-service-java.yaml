@@ -1,0 +1,4 @@
+config:
+- SAPJCo: SAPJCo.json
+SAPJCo:
+- name: SAP JCo

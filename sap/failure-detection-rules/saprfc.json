@@ -1,0 +1,19 @@
+{
+    "name": "{{ .name }}",
+    "description": "{{ .description }}",
+    "enabled": true,
+    "fdpId": "{{ .fdpId }}",
+    "conditions": [
+        {
+            "attribute": "SERVICE_NAME",
+            "predicate": {
+                "type": "STRING_EQUALS",
+				"ignoreCase": false,
+                "values": [
+		       	"SAP JCo",
+			"SAP NCo"       
+		]
+            }
+        }
+    ]
+}

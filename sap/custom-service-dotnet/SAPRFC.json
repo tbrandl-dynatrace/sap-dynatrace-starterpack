@@ -1,0 +1,31 @@
+{
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.226.84.20210913-122248",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "processGroups": [],
+ "queueEntryPoint": false,
+ "queueEntryPointType": null,
+ "rules": [
+  {
+   "annotations": [],
+   "className": "SAP.Middleware.Connector.RfcFunction",
+   "enabled": true,
+   "fileName": "",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "argumentTypes": [
+      "SAP.Middleware.Connector.RfcDestination"
+     ],
+     "methodName": "Invoke",
+     "returnType": "System.Void"
+    }
+   ]
+  }
+ ]
+}

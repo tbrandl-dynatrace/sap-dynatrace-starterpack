@@ -1,0 +1,7 @@
+config:
+- S4HANACloud: S4HANACloud.json
+- Fiori: Fiori.json
+S4HANACloud:
+- name: S4/HANA Cloud
+Fiori:
+- name: Fiori

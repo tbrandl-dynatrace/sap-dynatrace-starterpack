@@ -1,0 +1,4 @@
+config:
+- SAPRFC: SAPRFC.json
+SAPRFC:
+- name: SAP NCo 

@@ -1,0 +1,18 @@
+{
+	"enabled": true,
+	"namingPattern": "{RequestAttribute:RFC Function}",
+	"conditions": [
+		{
+			"attribute": "SERVICE_REQUEST_ATTRIBUTE",
+			"comparisonInfo": {
+				"type": "STRING_REQUEST_ATTRIBUTE",
+				"requestAttribute": "RFC Function",
+				"comparison": "EXISTS",
+				"value": "true",
+				"negate": false,
+				"isCaseSensitive": false
+			}
+		}
+	],
+	"placeholders": []
+}

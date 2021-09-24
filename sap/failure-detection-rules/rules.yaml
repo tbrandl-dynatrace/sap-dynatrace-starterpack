@@ -1,0 +1,7 @@
+config:
+  - saprfc: "saprfc.json"
+
+saprfc:
+  - name: "SAP JCo"
+  - description: "Ignore NO_DATA_FOUND in SAP JCo"
+  - fdpId: "/failure-detection-parametersets/saprfc.id"

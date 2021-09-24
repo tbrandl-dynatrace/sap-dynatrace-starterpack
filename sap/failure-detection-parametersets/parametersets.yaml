@@ -1,0 +1,6 @@
+config:
+  - saprfc: "saprfc.json"
+
+saprfc:
+  - name: "saprfc"
+  - description: "Ignore NO_DATA_FOUND ABAP Exceptions"
