@@ -24,6 +24,17 @@ A set of configuration for starting to monitor SAP Fiori and S4/HANA application
 ## Session Replay for understanding usability problems in the Fiori Application
 ![image](https://user-images.githubusercontent.com/48479537/134674591-f91b4bc8-2ff9-4e30-adb4-9c338db609db.png)
 
+# What does this do?
+* Creating a Custom Service for JCo and NCo RFC connections
+* Creating a request attribute for getting the RFC name
+* Creating a global request naming rule for naming the RFC requests
+* Creating a global error detection rule for ignoring RFC errors with NO_DATA_FOUND
+* Creating 2 Applications - S4/HANA Cloud (Monitored using Dynatrace Browser Extension) and Fiori (for adding directly to the Fiori application - see https://blogs.sap.com/2018/07/17/monitoring-a-fiori-launchpad-on-sap-cloud-portal-using-dynatrace./)
+  * Creating a user tag for proper naming
+  * Creating user action naming rules for better naming of the user actions
+  * Setting ```data-sap-ui``` as alternative for data-dtname
+  * Setting the custom configuration properties ```exp=1|peti=1``` for working around some Fiori issues
+
 # Support
 This is a community-developed project. There is no official Dynatrace support for this project.
 
