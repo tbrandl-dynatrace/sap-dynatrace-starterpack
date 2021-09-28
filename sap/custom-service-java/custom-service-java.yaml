@@ -1,4 +1,7 @@
 config:
 - SAPJCo: SAPJCo.json
+- SAPPI: SAPPI.json
 SAPJCo:
 - name: SAP JCo
+SAPPI:
+- name: SAP PI File

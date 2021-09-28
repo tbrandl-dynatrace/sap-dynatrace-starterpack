@@ -16,7 +16,6 @@
    "className": "com.sap.conn.jco.rt.JCoMiddleware$Client",
    "enabled": true,
    "fileName": "",
-   "id": "3bd942e1-2599-4732-b6f4-b4cb487f6b6c",
    "matcher": "EQUALS",
    "methodRules": [
     {
@@ -30,7 +29,6 @@
       "boolean",
       "com.sap.conn.jco.AbapClassException$Mode"
      ],
-     "id": "decb047f-d61a-4611-adfe-74806adb22d8",
      "methodName": "execute",
      "returnType": "void"
     }
@@ -41,11 +39,9 @@
    "className": "com.sap.conn.jco.server.JCoServerFunctionHandler",
    "enabled": true,
    "fileName": "",
-   "id": "1cda391a-32dd-4e1e-a839-183b62cd89f7",
    "matcher": "EQUALS",
    "methodRules": [
     {
-     "id": "ed65cf2b-5298-4d19-9d8d-29396726bb69",
      "methodName": "handleRequest",
      "returnType": "void"
     }
@@ -56,11 +52,9 @@
    "className": "com.sap.conn.jco.server.JCoServerRequestHandler",
    "enabled": true,
    "fileName": "",
-   "id": "789b56f0-ec8e-4fdb-9e18-4aed27b9b8a4",
    "matcher": "EQUALS",
    "methodRules": [
     {
-     "id": "77802a51-8cc6-4133-87bd-2a76fb87ff61",
      "methodName": "handleRequest",
      "returnType": "void"
     }

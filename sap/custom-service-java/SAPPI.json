@@ -1,0 +1,41 @@
+{
+ "enabled": true,
+ "metadata": {
+  "clusterVersion": "1.227.67.20210921-085030",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "processGroups": [],
+ "queueEntryPoint": false,
+ "queueEntryPointType": null,
+ "rules": [
+  {
+   "annotations": [],
+   "className": "com.sap.aii.adapter.file.File2XI",
+   "enabled": true,
+   "fileName": "",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "methodName": "invoke",
+     "returnType": "void"
+    }
+   ]
+  },
+  {
+   "annotations": [],
+   "className": "com.sap.aii.adapter.file.File2XI",
+   "enabled": true,
+   "fileName": "",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "methodName": "send",
+     "returnType": "void"
+    }
+   ]
+  }
+ ]
+}

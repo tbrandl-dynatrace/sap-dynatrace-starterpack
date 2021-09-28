@@ -26,6 +26,7 @@ A set of configuration for starting to monitor SAP Fiori and S4/HANA application
 
 # What does this do?
 * Creating a Custom Service for JCo and NCo RFC connections
+* Creating a Custom Service for SAP PI file integrations
 * Creating a request attribute for getting the RFC name
 * Creating a global request naming rule for naming the RFC requests
 * Creating a global error detection rule for ignoring RFC errors with NO_DATA_FOUND
