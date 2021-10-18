@@ -2,3 +2,4 @@ config:
 - RFCFunction: RFCFunction.json
 RFCFunction:
 - name: RFC Function
+- RFC Function: "request-attributes/RFCFunction.name"

@@ -59,6 +59,19 @@
      "returnType": "void"
     }
    ]
+  },
+    {
+   "annotations": [],
+   "className": "com.sap.mw.jco.JCO$Server",
+   "enabled": true,
+   "fileName": "",
+   "matcher": "EQUALS",
+   "methodRules": [
+    {
+     "methodName": "handleRequest",
+     "returnType": "void"
+    }
+   ]
   }
  ]
 }
